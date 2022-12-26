@@ -1,46 +1,198 @@
-.navbar{
-    background-color: #1d1602;
-    color: white;
-    display: flex;
-    
+*{
+  box-sizing: border-box;
 }
-
-.navbar>ul{
+body{
+  margin:0;
+  padding: 0;
+}
+.container-fluid{
+    width: 100%;
+}
+.navbar{
+    background-color: #111;
+  }
+  .list{
     list-style-type: none;
     display: flex;
-    margin-left: 5%;
-}
-.navbar>ul>li{
-    width: 160px;
-    margin-left:1% ;
-    text-align: center;
-}
-.navbar>ul>li:hover{
-    background-color: #fff;
-    color: black;
+    justify-content: space-between;
+    width: 90%;
+    margin-left:10%
+  }
+  .list-item{
+    list-style: none;
+    color: #fff;
+    font-size: 1.5em;
+  }
+  .list-item:hover{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  .toggle{
+    position: absolute;
+    top: .75;
+    right: 1rem;
+    display: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
     border-radius: 10px;
-    cursor: pointer;
-    font-size: ;
-   
-}
-.main--logo{
+  }
+ 
+
+  @media screen and (max-width:575px) {
+    .toggle{
+      display: flex;
+    }
+    .list{
+    display: none;
+    }
+    .toggler{
+      position: absolute;
+      display: block;
+      top:8px;
+      right: 0;
+      width: 35%;
+      overflow: hidden;
+      background-color:#111;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius:20px;
+    }
+    .list-item{
+      font-size: 1.3rem;
+    }
+    .list-item:hover{
+      opacity: 0.7;
+    }
+    .option{
+      position: relative;
+      left: -20px;
+      bottom: 4px;
+      display: flex;
+      border-bottom: 1px solid grey;
+    }
+    .logo{
+     max-width: 70%;
+    }
+  }
+  @media (min-width:576px) and (max-width:768px){
+    .logo{
+      width:300px;
+      height: 140px;
+    }
+    .list{
+      position: absolute;
+      top: -78px;
+      display: inline-block;
+      background-color: #111;
+      right: 5vh;
+    }
+    .list-item{
+      font-size: 1rem;
+    }
+    .option{
+      margin-top: 10px;
+    }
+    .list-item:hover{
+
+      opacity: 0.7;
+    }
+  }
+  @media (min-width:769px) and (max-width:992px){
+  .navbar{
+    display: block;
+    overflow-y: hidden;
+  }
+  .logo-div{
+    height: 100px;
+    columns:2;
+  }
+  .logo{
+    margin-top: 20px;
+  }
+  
+  .list{
+    position:fixed;
+    top: 40px;
+    left: 25%;
     display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-}
-.main:hover{
-    background-color: #fff;
-    color: black;
-    height: 60%;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
+    width: 500px;
+  }
+  .list-item{
+    font-size: 1rem;
+  }
+  .list-item:hover{
+    opacity: 0.7;
+  }
+ 
+
+  }
+  @media (min-width:993px) and (max-width:1200px){
+    .logo-div{
+    width: 100%;;
+      columns: 2;
+
+    }
+    .list{
+      position: absolute;
+      top: -25px;
+      left: -120%;
+      justify-content: space-between;
+    }
+    .option{
+      display: flex;
+   }
+   .list-item{
+    width: 170px;
+    font-size: 1rem;
+   }
+  }
+  @media(min-width:1201px) and (max-width:1592px){
+    .logo-div{
+      columns: 2;
+    }
     
+    .list-div{
+      position: absolute;
+      right: 25%;
+    }
+    .list{
+      margin-left: -6vw;
+    }
+    .list-item{
+      display: block;
+      width: 14vw;
+      font-size: 1.5rem;
+
+    }
+  }
+  @media (min-width:1593px) and (max-width:15000px) {
+    .logo-div{
+      columns: 2;
+      position: absolute;
+      left: 2vw;
+    }
+    .list-div{
+      position: absolute;
+      right:25vw
+        }
+  
+        .list-item{
+          display: block;
+          width: 200px;
+          font-size: 1.7rem;
+        }
+  }
+
+.material-symbols-outlined {
+color: white;
 }
-.logo{
-    width: 350px;
-    height: 100%;
-    padding-left: 300px;
-}
+
