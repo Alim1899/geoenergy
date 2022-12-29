@@ -146,3 +146,43 @@
   .section__title--testimonials {
     margin-bottom: 4rem;
   }
+
+  @media (max-width:575px) {
+   
+      .testimonial::before {
+        content: '';
+      }
+    
+      .testimonial{
+        height: 90%;
+        width: 80%;
+      }   
+      .testimonial__header{
+        font-size: 1.6rem;
+      }
+      .testimonial__text{
+        height: 70%;
+        overflow: scroll;
+      }   
+      .dots__dot {
+         box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7);
+      }
+
+      
+  }
+
+  @media (min-width:576px) and (max-width:768px){
+
+
+
+
+
+
+
+
+
+  }
+  @media (min-width:769px) and (max-width:992px){}
+  @media (min-width:993px) and (max-width:1200px){}
+  @media(min-width:1201px) and (max-width:1592px){}
+  @media (min-width:1593px) and (max-width:15000px) {}

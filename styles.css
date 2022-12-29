@@ -112,22 +112,22 @@ body{
     overflow-y: hidden;
   }
   .logo-div{
-    height: 100px;
+    height: 100%;
     columns:2;
   }
-  .logo{
-    margin-top: 20px;
-  }
-  
   .list{
     position:fixed;
-    top: 40px;
-    left: 25%;
+    left: 10vw;
     display: flex;
-    width: 500px;
+    justify-content: center;
+  }
+  .option{
+    margin-top: -2vw;
+    margin-left: 2vw;
   }
   .list-item{
-    font-size: 1rem;
+   
+    font-size: 1.3rem;
   }
   .list-item:hover{
     opacity: 0.7;
@@ -137,7 +137,6 @@ body{
   }
   @media (min-width:993px) and (max-width:1200px){
     .logo-div{
-    width: 100%;;
       columns: 2;
 
     }
@@ -152,7 +151,7 @@ body{
    }
    .list-item{
     width: 170px;
-    font-size: 1rem;
+    font-size: 1.4rem;
    }
   }
   @media(min-width:1201px) and (max-width:1592px){
@@ -194,9 +193,4 @@ body{
 
 .material-symbols-outlined {
 color: white;
-}
-
-
-.logo{
-  cursor: pointer;
 }
