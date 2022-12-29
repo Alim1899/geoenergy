@@ -111,3 +111,19 @@ const slider = function(){
     )
  };
  slider();
+/////////////////////////////////////////////////
+
+ //Adding map for addresses
+const mapDiv = document.querySelector('.map');
+ const map = L.map('map').setView([41.721634, 44.778681], 15);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([41.721634, 44.778681]).addTo(map)
+    .bindPopup('კოსტავას ქუჩა 73')
+    .openPopup();
+
+   
+
