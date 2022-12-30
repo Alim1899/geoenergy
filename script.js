@@ -114,11 +114,12 @@ const slider = function(){
 /////////////////////////////////////////////////
 
  //Adding map for addresses
-const mapDiv = document.querySelector('.map');
- const map = L.map('map').setView([41.721634, 44.778681], 15);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+ const map = L.map('map').setView([41.721634, 44.778681], 17);
+
+ L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+  maxZoom: 20,
+  subdomains:['mt0','mt1','mt2','mt3']
 }).addTo(map);
 
 L.marker([41.721634, 44.778681]).addTo(map)

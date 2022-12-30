@@ -40,7 +40,7 @@ margin-top: 8vw;
 /* Styling contact list links */
   .contact-list-item{
     text-align: left;
-    margin-left: 1vw;
+    margin-left: 5vw;
     margin-top: 2vw;
   }
 
@@ -66,10 +66,84 @@ height: 250px;
 display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15vw;
   }
-
  #map{
-
   width: 90%;
   height: 100%;
  }
+
+ /* //////////////////////////////////////////// */
+ /* Responsive contact page */
+ 
+
+@media (min-width:576px) and (max-width:768px){
+ .address{
+  margin-top: 10vw;
+  height: 300px;
+  margin-bottom: 50px;
+ }
+ .contact-head{
+  font-size: 1.7rem;
+ }
+ .contact-list-item{
+  font-size: 1.2rem;
+  margin-top: 3vw;
+ }
+}
+@media (min-width:769px) and (max-width:992px){
+.address{
+  margin-top: 8vw;
+  height: 370px;
+  margin-bottom: 50px;
+}
+.contact-head{
+  font-size: 1.8rem;
+}
+.contact-list-item{
+  font-size: 1.4rem;
+  margin-top: 3vw;
+ }
+}
+@media (min-width:993px) and (max-width:1200px){
+  .address{
+    margin-top: 7vw;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+  .contact-head{
+    font-size: 1.9rem;
+  }
+  .contact-list-item{
+    font-size: 1.5rem;
+    margin-top: 2.5vw;
+   }
+}
+@media(min-width:1201px) and (max-width:1592px){
+  .address{
+    margin-top: 6vw;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+  .contact-head{
+    font-size: 1.9rem;
+  }
+  .contact-list-item{
+    font-size: 1.5rem;
+    margin-top: 2vw;
+   }
+}
+@media (min-width:1593px) and (max-width:15000px) {
+  .address{
+    margin-top: 5vw;
+    height: 550px;
+    margin-bottom: 50px;
+  }
+  .contact-head{
+    font-size: 2.1rem;
+  }
+  .contact-list-item{
+    font-size: 1.7rem;
+    margin-top: 2vw;
+   }
+}
