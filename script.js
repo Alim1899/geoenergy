@@ -127,4 +127,12 @@ L.marker([41.721634, 44.778681]).addTo(map)
     .openPopup();
 
    
+
+
+    //Gallery zoom photos
+    window.onload = () => {
+      for (let i of document.querySelectorAll(".gallery img")) {
+        i.onclick = () => i.classList.toggle("full");
+      }
+    };
     
