@@ -9,7 +9,7 @@ body{
     width: 100%;
 }
 .navbar{
-    background-color: #111;
+    background-color: black
   }
  
   .list{
@@ -60,12 +60,12 @@ body{
       position: absolute;
       display: block;
       top:8px;
-      right: 0;
-      width: 55%;
+      right: -32px;
+      width: 70%;
       height: 200px;
-      text-align: center;
-      overflow: hidden;
-      font-weight: 900;
+      
+      overflow: scroll;
+      font-weight: 800;
       opacity: 0.9;
       background-color:black;
       border-bottom-left-radius: 20px;
@@ -104,7 +104,7 @@ body{
       position: absolute;
       top: -78px;
       display: inline-block;
-      background-color: #111;
+      background-color: black;
       right: 5vh;
     }
     .list-item{

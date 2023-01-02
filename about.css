@@ -1,0 +1,25 @@
+#about{
+    background-color: #f0efef;
+margin: 5%;
+border-radius: 50px;
+
+
+}
+.about-text{
+    
+    border-radius: 25px;
+    width: 80%;
+    margin:0 auto;
+    margin-top: 5vw;
+    font-family:'Times New Roman', Times, serif;
+}
+.about-desc::before{
+    content: '\201C';
+    font-size: xx-large;
+}
+
+.about-photo>img{
+    width: 90%;
+    margin: 5%;
+    border-radius: 50px;
+}
