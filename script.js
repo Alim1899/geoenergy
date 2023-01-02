@@ -130,9 +130,14 @@ L.marker([41.721634, 44.778681]).addTo(map)
 
 
     //Gallery zoom photos
-    window.onload = () => {
-      for (let i of document.querySelectorAll(".gallery img")) {
-        i.onclick = () => i.classList.toggle("full");
+    const images = document.querySelectorAll(".gallery img");
+    images.forEach(img => img.addEventListener('click', function(e){
+      if(e.target.classList.contains('full')){
+        img.classList.remove('full');
       }
-    };
+      else {
+        images.forEach(imgs => imgs.classList.remove('full'))
+            img.classList.add('full');
+      }
+    }))
     
