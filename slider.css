@@ -4,10 +4,11 @@
     height: 50rem;
     margin: 0 auto;
     position: relative;
-  
-    /* IN THE END */
+    border-bottom: 2px solid gray;
+   
     overflow: hidden;
   }
+  
   
   .slide {
     position: absolute;
@@ -169,4 +170,9 @@
       }
 
       
+  }
+
+  .sticky{
+    position: fixed;
+    background-color: black;
   }

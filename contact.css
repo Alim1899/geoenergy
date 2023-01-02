@@ -5,10 +5,11 @@
 
   /* Styling contact page header - mobile first */
   .contact{
-    overflow: scroll;
+    overflow: hidden;
     width: 100%;
-margin-top: 8vw;
-
+    margin-top: 8vw;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
   }
   .contact-head{
     text-decoration:overline 1px rgb(212, 198, 198);
@@ -144,6 +145,5 @@ display: flex;
   }
   .contact-list-item{
     font-size: 1.7rem;
-    margin-top: 2vw;
    }
 }

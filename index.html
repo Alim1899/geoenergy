@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="stylesheet" href="navbarCSS.css" type="text/css">
+    <link rel="stylesheet" href="slider.css" type="text/css">
     <link rel="stylesheet" href="contact.css" type="text/css">
 
 
@@ -24,9 +24,9 @@
 </head>
 <body >
     <!-- Navbar -->
-    <nav class="container-fluid navbar">
-        
-        <div class="logo-div col-sm-8">
+    <div class="navbar sticky-top">
+      <nav class="container-fluid">
+        <div class="logo-div col-sm-8 sticky">
           <a href="">  <img class="logo" src=./logo.svg></a>
         </div>
         <a href="" class="toggle">
@@ -35,16 +35,18 @@
         </a>
         <div class="list-div col-sm-4">
         <ul class="list">
-        <li class="text-center option"><a class="list-item" href="">სერვისები</a></li>
+        <li class="text-center option"><a class="list-item" href="#services">სერვისები</a></li>
         <li class="text-center option"><a class="list-item" href="">ჩვენს შესახებ</a></li>
         <li class="text-center option"><a class="list-item" href="">გალერეა</a></li>
         <li class="text-center option"><a class="list-item" href="#contact">კონტაქტი</a></li>
      </ul>
         </div>
     </nav>
+    </div>
+    
 <!-- Slidebar -->
 
-<div class="slider hidden">
+<div class="slider section-1" id="services">
     <div class="slide slide--1">
       <div class="testimonial">
         <h5 class="testimonial__header">10/6 0.4 კვ ძაბვის ქსელის პროექტირება</h5>
@@ -127,7 +129,7 @@
   </div>
 
 
-  <div class="contact" id="contact">
+  <div class="contact section-4" id="contact">
     <h2 class="contact-head">საკონტაქტო ინფორმაცია:</h2>
     <div class="contact-items">
       <ul class="contact-ul">

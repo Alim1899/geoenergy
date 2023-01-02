@@ -11,6 +11,7 @@ body{
 .navbar{
     background-color: #111;
   }
+ 
   .list{
     list-style-type: none;
     display: flex;
@@ -61,6 +62,7 @@ body{
       top:8px;
       right: 0;
       width: 55%;
+      height: 200px;
       text-align: center;
       overflow: hidden;
       font-weight: 900;
@@ -71,7 +73,6 @@ body{
     }
     .list-item{
       font-size: 1.3rem;
-
     }
     .list-item:hover{
       opacity: 0.7;
@@ -85,6 +86,13 @@ body{
     }
     .logo{
      max-width: 70%;
+    }
+  }
+  @media screen and (max-width:575px){
+    .list-item{
+      margin-top: 15px;
+      font-size: 1.3rem;
+
     }
   }
   @media (min-width:576px) and (max-width:768px){
@@ -197,4 +205,8 @@ body{
 
 .material-symbols-outlined {
 color: white;
+}
+.sticky{
+  position: fixed;
+  background-color: black;
 }
