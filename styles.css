@@ -92,8 +92,8 @@ body{
     .list-item{
       margin-top: 15px;
       font-size: 1.3rem;
-
     }
+  
   }
   @media (min-width:576px) and (max-width:768px){
     .logo{
@@ -201,6 +201,9 @@ body{
           width: 200px;
           font-size: 1.7rem;
         }
+        .section-header{
+          font-size: xx-large;
+        }
   }
 
 .material-symbols-outlined {
@@ -209,4 +212,8 @@ color: white;
 .sticky{
   position: fixed;
   background-color: black;
+}
+.section-header{
+  text-align: center;
+ margin-top: 5vw;
 }

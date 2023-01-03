@@ -5,7 +5,6 @@
     margin: 0 auto;
     position: relative;
     border-bottom: 2px solid gray;
-   
     overflow: hidden;
   }
   
@@ -18,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
   
     /* THIS creates the animation! */
     transition: transform 1s;
@@ -34,10 +34,8 @@
     position: absolute;
     top: 50%;
     z-index: 10;
-  
-    border: none;
-    background: rgba(255, 255, 255, 0.7);
-    font-family: inherit;
+    border: 1px solid #eee6e6;
+    background-color: white;
     color: #333;
     border-radius: 50%;
     height: 5.5rem;
@@ -45,7 +43,9 @@
     font-size: 3.25rem;
     cursor: pointer;
   }
-  
+  .slider__btn:hover{
+    border-color: #fede17;
+  }
   .slider__btn--left {
     left: 6%;
     transform: translate(-50%, -50%);
@@ -113,7 +113,7 @@
   }
   
   .testimonial__text {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 3.5rem;
     color: #666;
   }

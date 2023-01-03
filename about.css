@@ -32,7 +32,7 @@ border-bottom: 2px solid #fede17;
 
 
  
-  @media (min-width:769px) and (max-width:1993px){
+  @media (min-width:769px) and (max-width:90993px){
     #about{
         display: flex;
     }
@@ -44,10 +44,4 @@ border-bottom: 2px solid #fede17;
     }
 
   }
-  @media (min-width:993px) and (max-width:1200px){
-
-  }
-  @media(min-width:1201px) and (max-width:1592px){  
-  }
-  @media (min-width:1593px) and (max-width:15000px) {
-  }
+ 
