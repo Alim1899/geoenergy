@@ -11,7 +11,7 @@ body { background: #eee; }
   margin: 0 auto;
   overflow: hidden;
   margin-top: 30px;
-  border-bottom: 2px solid gray;
+ margin-bottom: 10px
 }
 
 .gallery img {
@@ -43,4 +43,8 @@ body { background: #eee; }
   .gallery img.full:hover {
     z-index: 999;
     transform: none;
+  }
+
+  .section-3{
+    border-bottom: 2px solid gray;
   }

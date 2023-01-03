@@ -7,7 +7,6 @@
   .contact{
     overflow: hidden;
     width: 100%;
-    margin-top: 8vw;
     border-bottom: 2px solid gray;
     margin-bottom: 20px;
   }
@@ -42,12 +41,13 @@
   .contact-list-item{
     text-align: left;
     margin-left: 5vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
   }
 
   .contact-ul{
-    margin-top: 10vw;
+    margin-top: 5vw;
     list-style-type: none;
+    
   }
   .contact-ul>li>a{
     color: black;
